@@ -61,3 +61,6 @@ Siswa 2 (Nancy Akisya N):
 - Implementasi NotesRepository dengan Hive
 - Membuat BLoC/Cubit untuk state management
 ```
+=======
+# notes-app-bloc-hive
+Flutter Notes App with BLoC &amp; Hive - Tugas Pemrograman Perangkat Bergerak
