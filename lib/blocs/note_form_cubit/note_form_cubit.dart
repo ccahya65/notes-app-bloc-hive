@@ -9,19 +9,16 @@ class NoteFormCubit extends Cubit<Note> {
     createdAt: DateTime.now(),
   ));
 
-  // Update title
   void updateTitle(String title) {
     final current = state;
     emit(current.copyWith(title: title));
   }
 
-  // Update content
   void updateContent(String content) {
     final current = state;
     emit(current.copyWith(content: content));
   }
 
-  // Reset form ke keadaan awal
   void reset() {
     emit(Note(
       id: null,
@@ -31,12 +28,10 @@ class NoteFormCubit extends Cubit<Note> {
     ));
   }
 
-  // Load existing note untuk edit
   void loadNote(Note note) {
     emit(note);
   }
 
-  // Check jika form valid
   bool isValid() {
     return state.title.trim().isNotEmpty;
   }
